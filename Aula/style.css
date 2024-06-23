@@ -1,0 +1,13 @@
+p{
+    /* color:red; */
+    width: 500px;
+    background-color: yellow;
+
+    /* Pra comentar pode usar os simbolos ou o atalho Ctrl + ; */
+    /* É o mesmo atalho para o html só que os simbolos são diferentes */
+
+}
+#parágrafo1 {
+    color: white;
+    background-color: black;
+}

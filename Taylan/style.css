@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(161,38,187);
+    background: linear-gradient(90deg,
+     rgba(161,38,187,1) 18%,
+     rgba(168,59,232,1) 40%,
+     rgba(109,111,252,1) 67%,
+     rgba(59,148,230,1) 81%,
+     rgba(0,212,255,1) 100%);
+}
+
+.card{
+    /* border: 1px solid; */
+    padding: 70px  100px;
+    margin:  20px auto;
+    border-radius: 20px;
+    /* cursor: pointer;  */
+    width: 475px;
+}   
+
+.card:hover{
+    box-shadow: 8px 8px 15px 12px rgba(205, 205, 205, 0.25);
+    /* cursor: pointer;  */
+}

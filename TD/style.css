@@ -1,0 +1,256 @@
+/* BORDER */
+#primeira {
+  height: 100px;
+  background-color: red;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  /* border: none;  */
+
+  /* Posso passar varias cores, seguidas na ordem:
+    eixo y, eixo x; ou top right bottom left; */
+}
+
+#segunda {
+  height: 100px;
+  background-color: green;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: black;
+  border-radius: 15px;
+  /* margin: 10px 10px;     */
+  /* border: none;  */
+}
+
+#terceira {
+  height: 100px;
+  background-color: blue;
+  border-width: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-radius: 15px;
+  margin-top: 10px;
+  /* border: none;  */
+}
+
+/* MARGIN E PADDING */
+#quarta {
+  height: 100px;
+  background-color: red;
+  border-width: 5px;
+  border-style: none;
+  border-color: black;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+#quinta {
+  height: 100px;
+  background-color: green;
+  border-width: 5px;
+  border-style: none;
+  border-color: black;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+#sexta {
+  height: 100px;
+  background-color: blue;
+  border-width: 5px;
+  border-style: none;
+  border-color: black;
+  border-radius: 15px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.bloco1,
+.bloco2,
+.bloco3 {
+  background-color: #363636;
+  height: 50px;
+}
+
+/* BOX SIZING  */
+#setima {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-width: 10px;
+  border-style: solid;
+  border-color: black;
+  /* border-radius: 15px; */
+  margin: auto;
+}
+
+#oitava {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  border-width: 10px;
+  border-style: solid;
+  border-color: black;
+  /* border-radius: 15px; */
+  margin: 10px auto;
+  /* margin-bottom: 10px; */
+  /* margin-top: 10px; */
+  /* box-sizing: border-box; */
+  /* Quando coloca padding e border o tamanho muda
+    pra manter o tamanho mas ter as propriedades
+    coloca box-sizing border box  */
+}
+
+#nona {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-width: 10px;
+  border-style: solid;
+  border-color: black;
+  /* border-radius: 15px; */
+  margin: auto;
+}
+
+h1 {
+  font-family: "monospace", "Arial", "sans-serif";
+  text-align: center;
+  margin: 50px;
+}
+
+/* LINKS */
+a {
+  background-color: red;
+  color: beige;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-left: 100px;
+}
+
+a:visited {
+  background-color: cornflowerblue;
+}
+
+a:hover {
+  /* Mouse passando por cima do botão  */
+  padding: 20px;
+  background-color: #363636;
+}
+
+a:active {
+  background-color: orange;
+}
+
+/* GRADIENTE */
+.degrade {
+  height: 100px;
+  /* background: linear-gradient(90deg, red, green, blue); */
+  /* background: linear-gradient(to top right, red, green, blue); */
+  /* background: linear-gradient(to top right, red, green 25%, blue); */
+  background: linear-gradient(90deg, yellow, 10%, red 80%, orange);
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+
+/* POSITION + DISPLAY  */
+.quadro {
+  width: 500px;
+  height: 400px;
+  border: #363636 solid;
+  /* position: relative; */
+}
+
+.quadrado {
+  /* display: inline-block;  */
+  /* left: 100px;  */
+  width: 100px;
+  height: 100px;
+}
+.quadrado-red {
+  background-color: red;
+}
+
+.quadrado-green {
+  background-color: green;
+  /* position: fixed; */
+  /* left: 50px;
+    position: sticky; */
+  /* top: 0; */
+}
+
+.quadrado-blue {
+  background-color: blue;
+  /* position: absolute; */
+  /* position: fixed; */
+  /* left: 300px; */
+}
+
+.bloquinho {
+  height: 100px;
+  width: 100px;
+  background-color: #363636;
+  margin: auto;
+  float: left;
+}
+
+.borda-bloquinho {
+  width: 700px;
+  border: 1px solid #363636;
+  overflow: auto;
+}
+#nome-bloquinho {
+  /* clear: both; */
+  /* clear: none; */
+  float: right;
+  position: relative;
+  text-align: right;
+}
+
+.card {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #363636;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.c1 {
+  line-height: 200px;
+}
+
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  margin: 100px auto;
+  width: 80px;
+  height: 80px;
+  border: 20px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #09d;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#load {
+  margin: 350px 50%;
+}

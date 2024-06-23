@@ -1,0 +1,23 @@
+div{
+    width: 500px;
+    height:300px;
+    background-color: rgb(255, 0, 0);
+    background-image: url('./images/Goku_sorrindo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Sempre lembrar de colocar ";" no final, demorei um pouco pra
+    colocar o background image. O ponto e vírgula é obrigatóriono CSS,
+    pq ele está dizendo que acaba ali ou pode continuar. */
+}
+
+p{  height: 50px;
+    color: rgb(0, 0, 0);
+    background-image: url('./images/Goku_sorrindo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}

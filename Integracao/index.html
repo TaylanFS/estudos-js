@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1> Mexendo com eventos </h1>
+
+    <h1 onclick=" console.log('H1 ativado') "> Clique em mim </h1> 
+    <!-- Se eu abri onclick com aspas duplas as próximas aspas (tipo a do console)
+    tem que ser simples, se não ele confunde onde esta fechando -->
+
+    <h2 onclick=" h2click() "> Clique em mim </h2>
+    <h3 onclick=" console.log(this) "> Clique em mim </h3> 
+    <!-- Aqui 'this' é o h3. -->
+    <h4 onclick=" this.style.color = 'red' "> Clique em mim </h4>
+    <!-- É como uma árvore, acesso this (que é o próprio elemento h4),
+    depois acesso o style (pra mudar o estilo), e enfim acesso color
+    (pra mudar a cor, ou seja, o estilo) -->
+
+    <h1 id="mudarTexto"> TEXTO RANDOM </h1>
+
+    <input id="texto" type="text" onchange="changeH1()">
+
+    <h1 id="mudarTexto2"> TEXTO RANDOM 2 </h1>
+
+    <input type="text" onchange="changeH02(this)">
+
+    <h1 id="mudarTexto3"> TEXTO RANDOM 3 </h1>
+
+    <input type="text" oninput="changeH03(this)">
+
+    <h1 id="desapareco"> Clique em mim </h1>
+    
+    <div onclick="sumir()"> Click </div>
+    
+    <div onmouseover="dentro(this)" onmouseout="fora(this)"> Click </div>
+
+    <h1>Gerando um numero aleatório entre 0 e 100</h1>
+
+        <!-- Deu errado  -->
+    <button  id="random" onclick="geraNumero()"> Gerar
+        <input type="text">
+    </button>
+
+    <h1 id="nome"></h1>
+    <input type="text" oninput="atualizar(this)">
+
+    
+
+
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>

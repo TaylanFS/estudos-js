@@ -1,0 +1,20 @@
+div { 
+    display: inline;
+    align-items: center;
+    align-items: center;
+}
+.cor1 {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-style: none;
+
+}
+
+.cor2 {
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    border-style: none;
+
+}
